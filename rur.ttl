@@ -320,7 +320,6 @@ rur:Member
   dcterms:references "Murphy, M.A. & Salvador, A. (Editors; revised by W.E. Piller & M-P Aubry), Online: International Stratigraphic Guide — An abridged version. Accessed online 04.11.2021. <https://stratigraphy.org/guide/>"@en ;
   dcterms:references "Salvador, A., 2013: International Stratigraphic Guide. Reprinted Second Edition, The International Union of Geological Sciences and The Geological Society of America, 214 pages. <https://doi.org/10.1130/9780813774022>"@en ;
   rdfs:isDefinedBy <https://linked.data.gov.au/def/rock-unit-rank> ;
-  skos:broader rur:Formation ;
   skos:definition "The formal lithostratigraphic unit next in rank below a formation (Salvador, 2013; Murphy & Salvador, Online)."@en ;
   skos:inScheme <https://linked.data.gov.au/def/rock-unit-rank> ;
   skos:notation "rrmbr" ;
@@ -641,13 +640,11 @@ rur:Subassemblage
   skos:prefLabel "subassemblage"@en ;
   skos:related geof:TectonometamorphicRockUnit ;
   skos:scopeNote "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
-  skos:broader rur:Assemblage ;
 .
 rur:Subcomplex
   a skos:Concept ;
   dcterms:references "Gillespie, M.R. & Leslie, A.G., 2021: BRUCS: a new system for classifying and naming mappable rock units. Journal of the Geological Society, 178(4), jgs2020-212. <https://jgs.lyellcollection.org/content/jgs/178/4/jgs2020-212.full.pdf>"@en ;
   rdfs:isDefinedBy <https://linked.data.gov.au/def/rock-unit-rank> ;
-  skos:broader rur:Complex ;
   skos:definition "One of two or more subdivisions of the same complex, with shared characteristics (Gillespie & Leslie, 2021)."@en ;
   skos:inScheme <https://linked.data.gov.au/def/rock-unit-rank> ;
   skos:notation "rrsbc" ;
@@ -659,7 +656,6 @@ rur:Subgroup
   dcterms:references "Murphy, M.A. & Salvador, A. (Editors; revised by W.E. Piller & M-P Aubry), Online: International Stratigraphic Guide — An abridged version. Accessed online 04.11.2021. <https://stratigraphy.org/guide/>"@en ;
   dcterms:references "Salvador, A., 2013: International Stratigraphic Guide. Reprinted Second Edition, The International Union of Geological Sciences and The Geological Society of America, 214 pages. <https://doi.org/10.1130/9780813774022>"@en ;
   rdfs:isDefinedBy <https://linked.data.gov.au/def/rock-unit-rank> ;
-  skos:broader rur:Group ;
   skos:definition "A Group may be subdivided into subgroups (Salvador, 2013; Murphy & Salvador, Online)."@en ;
   skos:inScheme <https://linked.data.gov.au/def/rock-unit-rank> ;
   skos:notation "rrsbg" ;
