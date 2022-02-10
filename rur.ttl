@@ -50,7 +50,7 @@
   owl:versionIRI <https://linked.data.gov.au/def/geofeatures/0.5> ;
   owl:versionInfo "Most ontology content but not complete diagrammatic coverage." ;
   skos:definition "This vocabulary lists types of rock unit ranks relevant to the Geological Survey of Queensland. It is automatically derived from GSQ's Geologic Features Ontology (https://linked.data.gov.au/def/geofeatures)"@en ;
-  skos:editorialNote "Following Gillespie & Leslie (2017), the North American Stratigraphic Code (2005 ) lithodemic classification/nomenclature (supersuite, suite and lithodeme) for nonstratiform, ranked units of ‘intrusive, highly deformed and/or highly metamorphosed rock’; and for nonstratiform unranked complex units (a mixture of rocks of two or more genetic classes) is not followed, but only from the perspectives: (1) the terms ‘lithodeme’ and ‘lithodemic’ are not utilized; (2) the ‘subsuite’, ‘suite’ and ‘supersuite’ rankings are applied only to intrusive rock units, not also highly metamorphosed rock units (as per Gillespie & Leslie, 2021); and complex rock units are treated separately and given rankings (after Gillespie & Leslie, 2021). Lithodemic nomenclature, which included rock complexes, was further advocated in the various Scandinavian nomenclatural guides (e.g., Kumpulainen, 2017); also compare the ISG (Online, accessed 28.09.2021) for the little-followed recommendation: ‘use of the term \"suite\" seems inadvisable’. The ‘suite’ terminology is entrenched in not only in Queensland/Australian rock nomenclature, but also that of elsewhere."@en ;
+  skos:editorialNote "Following Gillespie & Leslie (2017), the North-American-Stratigraphic-Code (2005 ) lithodemic nomenclature (supersuite, suite, lithodeme) for nonstratiform, ranked units of ‘intrusive, highly deformed and/or highly metamorphosed rock’; and for nonstratiform unranked complex units (a mixture of rocks of two or more genetic classes) is not followed, but only from the perspectives: (1) the terms ‘lithodeme’ and ‘lithodemic’ are not utilized; (2) the ‘subsuite’, ‘suite’ and ‘supersuite’ rankings are applied only to intrusive igneous rock units, not also to highly metamorphosed rock units (as also per Gillespie & Leslie, 2021); and complex rock units are treated separately and given rankings (after Gillespie & Leslie, 2021). Lithodemic nomenclature, which included rock complexes, was further advocated in the various Scandinavian nomenclatural guides (e.g., Kumpulainen, 2017); compare the ISG (Online, accessed 28.09.2021) for the little-followed recommendation: ‘use of the term "suite" seems inadvisable’. The ‘suite’ terminology is entrenched not only in Queensland/Australian rock nomenclature, but also that of elsewhere."@en ;
   skos:hasTopConcept <http://sweetontology.net/realmGeol/GeologicFeature> ;
   skos:prefLabel "Rock Unit Rank"@en ;
   prof:isProfileOf <http://sweetontology.net/realmGeol> ;
@@ -257,8 +257,7 @@ rur:Intrusion
   skos:notation "rriin" ;
   skos:prefLabel "intrusion"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "Here proposed: The provisional institution of ‘intrusion’ (igneous intrusion) at Rank 5 (cf. Gillespie & Leslie, 2021; for BRUCS) as the basic rank unit of intrusive igneous rock types that is the equivalent of ‘formation’ in lithostratigraphic-rank nomenclature (although, with respect to BRUCS, ‘equivalent’ ranking levels do not align here, as ‘formation’ sits against 'centre/cluster' at Rank 4 in BRUCS; compare Gillespie & Leslie, 2021). Here, below the hierarchial level of ‘intrusion’, specific intrusive unit types are not further ranked; they include lopolith, pluton, ring-intrusion, and swarm (assigned to Rank 5 in BRUCS) and cone-sheet, diatreme, dyke, laccolith, neck, pipe, plug, ring-dyke, sheet, sill, etc. (assigned to Rank 6 in BRUCS) [Gillespie & Leslie, 2021]. The latter authors apply the term ‘intrusion’ (at Rank 6) to ‘any intrusion whose form is not known or does not conform to one of those denoted by another unit term’ (e.g., lopolith, pluton, diatreme, dyke, laccolith, neck, pipe, plug, etc.). Contrastingly, here, the term ‘intrusion’ is taken, at a generic level, to represent any intrusion that may or may not be further classified by another more definitive term (at lower levels of rank that, as stated, are not here delineated, as some of these terms can be concatenated, e.g., dyke-and-sill-swarm; see Gillespie & Leslie, 2021)."@en ;
-.
+  .
 rur:IntrusionCentre
   a skos:Concept ;
   dcterms:references "Gillespie, M.R. & Leslie, A.G., 2021: BRUCS: a new system for classifying and naming mappable rock units. Journal of the Geological Society, 178(4), jgs2020-212. <https://jgs.lyellcollection.org/content/jgs/178/4/jgs2020-212.full.pdf>"@en ;
@@ -291,7 +290,6 @@ rur:IntrusionSwarm
   skos:notation "rrisw" ;
   skos:prefLabel "intrusion-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘intrusion-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:Laccolith
   a skos:Concept ;
@@ -302,7 +300,6 @@ rur:Laccolith
   skos:notation "rrlac" ;
   skos:prefLabel "laccolith"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘laccolith’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘laccolith’ in BRUCS]."@en ;
 .
 rur:Lopolith
   a skos:Concept ;
@@ -313,7 +310,6 @@ rur:Lopolith
   skos:notation "rrlop" ;
   skos:prefLabel "lopolith"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘lopolith’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘lopolith’ in BRUCS]."@en ;
 .
 rur:Member
   a skos:Concept ;
@@ -386,7 +382,6 @@ rur:Neck
   skos:notation "rrnek" ;
   skos:prefLabel "neck"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘neck’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘neck’ in BRUCS]."@en ;
 .
 rur:NeckSwarm
   a skos:Concept ;
@@ -434,7 +429,6 @@ rur:Pipe
   skos:notation "rrpip" ;
   skos:prefLabel "pipe"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘pipe’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘pipe’ in BRUCS]."@en ;
 .
 rur:PipeSwarm
   a skos:Concept ;
@@ -446,7 +440,6 @@ rur:PipeSwarm
   skos:notation "rrpis" ;
   skos:prefLabel "pipe-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘pipe-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:Plug
   a skos:Concept ;
@@ -457,7 +450,6 @@ rur:Plug
   skos:notation "rrplg" ;
   skos:prefLabel "plug"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘plug’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘plug’ in BRUCS]."@en ;
 .
 rur:PlugSwarm
   a skos:Concept ;
@@ -469,7 +461,6 @@ rur:PlugSwarm
   skos:notation "rrpls" ;
   skos:prefLabel "plug-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘plug-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:Pluton
   a skos:Concept ;
@@ -480,7 +471,6 @@ rur:Pluton
   skos:notation "rrplu" ;
   skos:prefLabel "pluton"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘pluton’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘pluton’ in BRUCS]."@en ;
 .
 rur:PlutonCluster
   a skos:Concept ;
@@ -502,7 +492,6 @@ rur:Ring-dyke
   skos:notation "rrrdy" ;
   skos:prefLabel "ring-dyke"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘ring-dyke’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘ring-dyke’ in BRUCS]."@en ;
 .
 rur:RingComplex
   a skos:Concept ;
@@ -525,7 +514,6 @@ rur:RingDykeSwarm
   skos:notation "rrrds" ;
   skos:prefLabel "ring-dyke-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘ring-dyke-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to 'swarm' in BRUCS]."@en ;
 .
 rur:RingIntrusion
   a skos:Concept ;
@@ -536,7 +524,6 @@ rur:RingIntrusion
   skos:notation "rrrin" ;
   skos:prefLabel "ring-intrusion"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘ring-intrusion’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘ring-intrusion’ in BRUCS]."@en ;
 .
 rur:Sheet
   a skos:Concept ;
@@ -547,7 +534,6 @@ rur:Sheet
   skos:notation "rrsht" ;
   skos:prefLabel "sheet"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘sheet’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘sheet’ in BRUCS]."@en ;
 .
 rur:SheetComplex
   a skos:Concept ;
@@ -570,7 +556,6 @@ rur:SheetSwarm
   skos:notation "rrshs" ;
   skos:prefLabel "sheet-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘sheet-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:Sill
   a skos:Concept ;
@@ -581,7 +566,6 @@ rur:Sill
   skos:notation "rrsil" ;
   skos:prefLabel "sill"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘sill’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘sill’ in BRUCS]."@en ;
 .
 rur:SillCluster
   a skos:Concept ;
@@ -615,7 +599,6 @@ rur:SillSwarm
   skos:notation "rrsls" ;
   skos:prefLabel "sill-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘sill-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:StructuralComplex
   a skos:Concept ;
@@ -745,7 +728,6 @@ rur:Swarm
   skos:notation "rrswm" ;
   skos:prefLabel "swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]. A swarm may variously embrace: an intrusion-swarm; a dyke-swarm, a sill-swarm; a plug-and-intrusion swarm; a plug-and-sheet swarm; a plug-and-dyke swarm, etc. (see Gillespie & Leslie, 2021)."@en ;
 .
 rur:Vein
   a skos:Concept ;
@@ -756,7 +738,6 @@ rur:Vein
   skos:notation "rrvei" ;
   skos:prefLabel "vein"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘vein’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘vein’ in BRUCS]."@en ;
 .
 rur:Vein-complex
   a skos:Concept ;
@@ -783,7 +764,6 @@ rur:VeinSwarm
   skos:prefLabel "vein-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
   skos:related rur:Vein-complex ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘vein-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to swarms in BRUCS]."@en ;
 .
 rur:VolcanicComplex
   a skos:Concept ;
