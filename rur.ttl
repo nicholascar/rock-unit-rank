@@ -50,7 +50,7 @@
   owl:versionIRI <https://linked.data.gov.au/def/geofeatures/0.5> ;
   owl:versionInfo "Most ontology content but not complete diagrammatic coverage." ;
   skos:definition "This vocabulary lists types of rock unit ranks relevant to the Geological Survey of Queensland. It is automatically derived from GSQ's Geologic Features Ontology (https://linked.data.gov.au/def/geofeatures)"@en ;
-  skos:editorialNote "Following Gillespie & Leslie (2017), the North-American-Stratigraphic-Code (2005 ) lithodemic nomenclature (supersuite, suite, lithodeme) for nonstratiform, ranked units of ‘intrusive, highly deformed and/or highly metamorphosed rock’; and for nonstratiform unranked complex units (a mixture of rocks of two or more genetic classes) is not followed, but only from the perspectives: (1) the terms ‘lithodeme’ and ‘lithodemic’ are not utilized; (2) the ‘subsuite’, ‘suite’ and ‘supersuite’ rankings are applied only to intrusive igneous rock units, not also to highly metamorphosed rock units (as also per Gillespie & Leslie, 2021); and complex rock units are treated separately and given rankings (after Gillespie & Leslie, 2021). Lithodemic nomenclature, which included rock complexes, was further advocated in the various Scandinavian nomenclatural guides (e.g., Kumpulainen, 2017); compare the ISG (Online, accessed 28.09.2021) for the little-followed recommendation: ‘use of the term "suite" seems inadvisable’. The ‘suite’ terminology is entrenched not only in Queensland/Australian rock nomenclature, but also that of elsewhere."@en ;
+  skos:editorialNote """Following Gillespie & Leslie (2017), the North-American-Stratigraphic-Code (2005) lithodemic nomenclature (supersuite, suite, lithodeme) for nonstratiform, ranked units of ‘intrusive, highly deformed and/or highly metamorphosed rock’; and for nonstratiform unranked complex units (a mixture of rocks of two or more genetic classes) is not followed, but only from the perspectives: (1) the terms ‘lithodeme’ and ‘lithodemic’ are not utilized; (2) the ‘subsuite’, ‘suite’ and ‘supersuite’ rankings are applied only to intrusive igneous rock units, not also to highly metamorphosed rock units (as also per Gillespie & Leslie, 2021); and complex rock units are treated separately and given rankings (after Gillespie & Leslie, 2021). Lithodemic nomenclature, which included rock complexes, was further advocated in the various Scandinavian nomenclatural guides (e.g., Kumpulainen, 2017); compare the ISG (Online, accessed 28.09.2021) for the little-followed recommendation: ‘use of the term "suite" seems inadvisable’. The ‘suite’ terminology is entrenched not only in Queensland/Australian rock nomenclature, but also that of elsewhere."""@en ;
   skos:hasTopConcept <http://sweetontology.net/realmGeol/GeologicFeature> ;
   skos:prefLabel "Rock Unit Rank"@en ;
   prof:isProfileOf <http://sweetontology.net/realmGeol> ;
@@ -63,6 +63,8 @@
 	skos:definition "A geologic feature is a conceptual feature a that is hypothesized to exist coherently in the Earth that results from geological processes"@en ;
 	skos:prefLabel "geologic feature"@en ;
 	skos:example "Individuals: Lake Eyre Basin, Sarmatian Craton, Victoria Point Sandbar, Mount Erebus Volcano. Subclasses: Basin, Craton, Shield, Province, Sub-Province."@en ;
+  rdfs:isDefinedBy <http://sweetontology.net> ;
+  dcterms:provenance "Taken from the SWEET Ontology"@en ;
 .
 
 rur:Assemblage
@@ -74,7 +76,7 @@ rur:Assemblage
   skos:notation "rrass" ;
   skos:prefLabel "assemblage"@en ;
   skos:related geof:TectonometamorphicRockUnit ;
-  skos:scopeNote "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
+  dcterms:provenance "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
 .
 rur:Batholith
   a skos:Concept ;
@@ -85,7 +87,7 @@ rur:Batholith
   skos:notation "rrbth" ;
   skos:prefLabel "batholith"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘batholith’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as ‘batholith’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed."@en ;
 .
 rur:Bed
   a skos:Concept ;
@@ -97,7 +99,7 @@ rur:Bed
   skos:notation "rrbed" ;
   skos:prefLabel "bed"@en ;
   skos:related geof:LithostratigraphicUnit ;
-  skos:scopeNote "Customarily, only distinctive beds (key beds, marker beds), which are particularly useful for stratigraphic purposes, like correlation or reference, are given proper names and considered formal lithostratigraphic units (Salvador, 2013; Murphy & Salvador, Online)."@en ;
+  dcterms:provenance "Customarily, only distinctive beds (key beds, marker beds), which are particularly useful for stratigraphic purposes, like correlation or reference, are given proper names and considered formal lithostratigraphic units (Salvador, 2013; Murphy & Salvador, Online)."@en ;
 .
 rur:Beds
   a skos:Concept ;
@@ -108,6 +110,7 @@ rur:Beds
   skos:notation "rrbds" ;
   skos:prefLabel "beds"@en ;
   skos:related geof:LithostratigraphicUnit ;
+  dcterms:provenance "Staines (1985) and endorsed by the Stratigraphic Nomenclature Committee, Geological Society of Australia"@en ;
 .
 rur:CalderaComplex
   a skos:Concept ;
@@ -124,7 +127,7 @@ rur:CalderaComplex
   skos:notation "rrcac" ;
   skos:prefLabel "caldera complex"@en ;
   skos:related geof:ComplexRockUnit ;
-  skos:scopeNote "An example of a caldera complex in Queensland includes the Late Triassic Agnes Water Caldera Complex (Purdy, 2009), referenced in the Australian Stratigraphic Units Database/ASUD (accessed 28.10.2021) under Stratigraphic Number 79059, where the term was considered to be ‘Informal’, as it is ‘Probably a structural term’. Although this complex has attendant structure, it is the mix of rock units associated with it that also determines it to be a rock unit [that should be extended in scope to include associated intrusive rocks, the existence of which has been indicated by D. Purdy (pers. comm, 28.10. 2021)]. Another example, in eastern Victoria: The Early Devonian Mount Elizabeth Caldera Complex [Willman et al., 1999; referenced in ASUD (accessed 28.10.2021) under Stratigraphic Number 34812]. The rank term ‘caldera volcano-complex’ [as applied, for example, to the Glencoe Caldera Volcano-complex (Scottish Highlands) by Gillespie & Leslie (2021) in presentation of the British Geological Survey’s Rock Unit Classification System/BRUCS] is a likely skos:altLabel."@en ;
+  dcterms:provenance "An example of a caldera complex in Queensland includes the Late Triassic Agnes Water Caldera Complex (Purdy, 2009), referenced in the Australian Stratigraphic Units Database/ASUD (accessed 28.10.2021) under Stratigraphic Number 79059, where the term was considered to be ‘Informal’, as it is ‘Probably a structural term’. Although this complex has attendant structure, it is the mix of rock units associated with it that also determines it to be a rock unit [that should be extended in scope to include associated intrusive rocks, the existence of which has been indicated by D. Purdy (pers. comm, 28.10. 2021)]. Another example, in eastern Victoria: The Early Devonian Mount Elizabeth Caldera Complex [Willman et al., 1999; referenced in ASUD (accessed 28.10.2021) under Stratigraphic Number 34812]. The rank term ‘caldera volcano-complex’ [as applied, for example, to the Glencoe Caldera Volcano-complex (Scottish Highlands) by Gillespie & Leslie (2021) in presentation of the British Geological Survey’s Rock Unit Classification System/BRUCS] is a likely skos:altLabel."@en ;
 .
 rur:CentralComplex
   a skos:Concept ;
@@ -136,7 +139,7 @@ rur:CentralComplex
   skos:notation "rrcco" ;
   skos:prefLabel "central-complex"@en ;
   skos:related geof:ComplexRockUnit ;
-  skos:scopeNote "Examples in Queensland include the Mount Warning Central Complex and the Mount Barney Central Complex (Ewart et al, 1987: University of Queensland, Papers, 11(4), 1–82)."@en ;
+  dcterms:provenance "Examples in Queensland include the Mount Warning Central Complex and the Mount Barney Central Complex (Ewart et al, 1987: University of Queensland, Papers, 11(4), 1–82)."@en ;
 .
 rur:Complex
   a skos:Concept ;
@@ -153,7 +156,7 @@ rur:Complex
   skos:notation "rrcom" ;
   skos:prefLabel "complex"@en ;
   skos:related geof:ComplexRockUnit ;
-  skos:scopeNote "The ISG definition is followed, with minor rewording (and without any change of meaning), although a complex unit is not here classified as a lithostratigraphic unit (as per the ISG). The North American Stratigraphic Code (2005) and Kumpulainen (2017), together with other Scandinavian guides, preferably adhere to a more specific definition, restricting a complex to a mixture of two or more genetic classes, albeit regarding a complex as a non-ranked lithodemic unit (generally, a defined, nonstratiform/non-stratified body of predominantly intrusive or highly deformed and/or highly metamorphosed rock). However, as the ISG usage (in embracing a mixture of diverse types of any genetic class) better suits the nomenclature applied to some complex rock units in Queensland, it is therefore provisionally followed. A complex, although unranked in the North American Stratigraphic Code, was considered to be ‘commonly comparable to suite or supersuite’, such that two or more associated complexes could be grouped in a supersuite. This problematical application of lithodemic nomenclature was addressed by the Subcommission on Quaternary Stratigraphy with their suggested introduction of the term ‘supercomplex’ and attendant recommendation for a two-fold hierarchy of rank for lithodemic rock units: lithodeme, suite and supersuite; and complex and supercomplex. Here, complex rock units are separated from lithostratigraphic and other single-class units (e.g., intrusive rock units) and broadly treated as stand-alone, largely nonstratiform, mixed-class units, thus reflecting the approach of Gillespie & Leslie (2021) in their construction of the British Geological Survey’s rock classification system (BRUCS). [Also, following Gillespie & Leslie, the North American Stratigraphic Code lithodemic terminology is not followed, and ‘suite’ rankings are applied solely to intrusive rock units (not also to metamorphic units)]. However, as indicated, nomenclatural usage in Queensland is not true to the more restricted and preferred definition of rock complexes comprising more than one genetic class of rocks (e.g., Jell, 2013)."@en ;
+  dcterms:provenance "The ISG definition is followed, with minor rewording (and without any change of meaning), although a complex unit is not here classified as a lithostratigraphic unit (as per the ISG). The North American Stratigraphic Code (2005) and Kumpulainen (2017), together with other Scandinavian guides, preferably adhere to a more specific definition, restricting a complex to a mixture of two or more genetic classes, albeit regarding a complex as a non-ranked lithodemic unit (generally, a defined, nonstratiform/non-stratified body of predominantly intrusive or highly deformed and/or highly metamorphosed rock). However, as the ISG usage (in embracing a mixture of diverse types of any genetic class) better suits the nomenclature applied to some complex rock units in Queensland, it is therefore provisionally followed. A complex, although unranked in the North American Stratigraphic Code, was considered to be ‘commonly comparable to suite or supersuite’, such that two or more associated complexes could be grouped in a supersuite. This problematical application of lithodemic nomenclature was addressed by the Subcommission on Quaternary Stratigraphy with their suggested introduction of the term ‘supercomplex’ and attendant recommendation for a two-fold hierarchy of rank for lithodemic rock units: lithodeme, suite and supersuite; and complex and supercomplex. Here, complex rock units are separated from lithostratigraphic and other single-class units (e.g., intrusive rock units) and broadly treated as stand-alone, largely nonstratiform, mixed-class units, thus reflecting the approach of Gillespie & Leslie (2021) in their construction of the British Geological Survey’s rock classification system (BRUCS). [Also, following Gillespie & Leslie, the North American Stratigraphic Code lithodemic terminology is not followed, and ‘suite’ rankings are applied solely to intrusive rock units (not also to metamorphic units)]. However, as indicated, nomenclatural usage in Queensland is not true to the more restricted and preferred definition of rock complexes comprising more than one genetic class of rocks (e.g., Jell, 2013)."@en ;
 .
 rur:ConeSheet
   a skos:Concept ;
@@ -164,7 +167,7 @@ rur:ConeSheet
   skos:notation "rrics" ;
   skos:prefLabel "cone-sheet"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as 'cone-sheet', below that of ‘Intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘cone-sheet’ in BRUCS]."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as 'cone-sheet', below that of ‘Intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘cone-sheet’ in BRUCS]."@en ;
 .
 rur:ConeSheetSwarm
   a skos:Concept ;
@@ -176,7 +179,7 @@ rur:ConeSheetSwarm
   skos:notation "rrcss" ;
   skos:prefLabel "cone-sheet-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘cone-sheet-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as ‘cone-sheet-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:Diatreme
   a skos:Concept ;
@@ -187,7 +190,7 @@ rur:Diatreme
   skos:notation "rrdia" ;
   skos:prefLabel "diatreme"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘diatreme’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘diatreme’ in BRUCS]."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as ‘diatreme’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘diatreme’ in BRUCS]."@en ;
 .
 rur:Dyke
   a skos:Concept ;
@@ -199,7 +202,7 @@ rur:Dyke
   skos:notation "rrdyk" ;
   skos:prefLabel "dyke"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘dyke’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘dyke’ in BRUCS]."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as ‘dyke’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘dyke’ in BRUCS]."@en ;
 .
 rur:DykeSwarm
   a skos:Concept ;
@@ -212,7 +215,7 @@ rur:DykeSwarm
   skos:notation "rrdsw" ;
   skos:prefLabel "dyke-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘dyke-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘dyke-swarm’ in BRUCS]."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as ‘dyke-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘dyke-swarm’ in BRUCS]."@en ;
 .
 rur:Flow
   a skos:Concept ;
@@ -224,6 +227,7 @@ rur:Flow
   skos:notation "rrflw" ;
   skos:prefLabel "flow"@en ;
   skos:related geof:LithostratigraphicUnit ;
+  dcterms:provenance "Salvador, 2013; Murphy & Salvador, Online"@en ;
 .
 rur:Formation
   a skos:Concept ;
@@ -235,6 +239,7 @@ rur:Formation
   skos:notation "rrfmn" ;
   skos:prefLabel "formation"@en ;
   skos:related geof:LithostratigraphicUnit ;
+  dcterms:provenance "Salvador, 2013; Murphy & Salvador, Online"@en ;
 .
 rur:Group
   a skos:Concept ;
@@ -246,6 +251,7 @@ rur:Group
   skos:notation "rrgrp" ;
   skos:prefLabel "group"@en ;
   skos:related geof:LithostratigraphicUnit ;
+  dcterms:provenance "Salvador, 2013; Murphy & Salvador, Online"@en ;
 .
 rur:Intrusion
   a skos:Concept ;
@@ -257,7 +263,8 @@ rur:Intrusion
   skos:notation "rriin" ;
   skos:prefLabel "intrusion"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  .
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
+.
 rur:IntrusionCentre
   a skos:Concept ;
   dcterms:references "Gillespie, M.R. & Leslie, A.G., 2021: BRUCS: a new system for classifying and naming mappable rock units. Journal of the Geological Society, 178(4), jgs2020-212. <https://jgs.lyellcollection.org/content/jgs/178/4/jgs2020-212.full.pdf>"@en ;
@@ -267,7 +274,7 @@ rur:IntrusionCentre
   skos:notation "rrice" ;
   skos:prefLabel "centre"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "Igneous intrusions may be grouped in centres (or clusters), expressing genetic and spatial relationships, these groupings (centres/clusters) being classified here at Rank 4, following Gillespie & Leslie (2021). Per the example of the cited authors, a centre could comprise two intersecting plutons, and several ring-dykes, a dyke-swarm and a number of pipes that intersect the plutons or are spatially closely associated with them."@en ;
+  dcterms:provenance "Igneous intrusions may be grouped in centres (or clusters), expressing genetic and spatial relationships, these groupings (centres/clusters) being classified here at Rank 4, following Gillespie & Leslie (2021). Per the example of the cited authors, a centre could comprise two intersecting plutons, and several ring-dykes, a dyke-swarm and a number of pipes that intersect the plutons or are spatially closely associated with them."@en ;
 .
 rur:IntrusionCluster
   a skos:Concept ;
@@ -278,7 +285,7 @@ rur:IntrusionCluster
   skos:notation "rricl" ;
   skos:prefLabel "intrusion cluster"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "Igneous intrusions may be grouped in clusters (or centres), expressing genetic and spatial relationships, these groupings (centres/clusters) being classified here at Rank 4, following Gillespie & Leslie (2021). Per the example of the cited authors, a cluster could comprise two dyke-swarms, a sill-swarm and numerous pipes, which are related but scattered over a wide area (unlike intrusions that are tightly grouped as a centre around a central point)."@en ;
+  dcterms:provenance "Igneous intrusions may be grouped in clusters (or centres), expressing genetic and spatial relationships, these groupings (centres/clusters) being classified here at Rank 4, following Gillespie & Leslie (2021). Per the example of the cited authors, a cluster could comprise two dyke-swarms, a sill-swarm and numerous pipes, which are related but scattered over a wide area (unlike intrusions that are tightly grouped as a centre around a central point)."@en ;
 .
 rur:IntrusionSwarm
   a skos:Concept ;
@@ -290,6 +297,7 @@ rur:IntrusionSwarm
   skos:notation "rrisw" ;
   skos:prefLabel "intrusion-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Laccolith
   a skos:Concept ;
@@ -300,6 +308,7 @@ rur:Laccolith
   skos:notation "rrlac" ;
   skos:prefLabel "laccolith"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Lopolith
   a skos:Concept ;
@@ -310,6 +319,7 @@ rur:Lopolith
   skos:notation "rrlop" ;
   skos:prefLabel "lopolith"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Member
   a skos:Concept ;
@@ -321,6 +331,7 @@ rur:Member
   skos:notation "rrmbr" ;
   skos:prefLabel "member"@en ;
   skos:related geof:LithostratigraphicUnit ;
+  dcterms:provenance "Salvador, 2013; Murphy & Salvador, Online"@en ;
 .
 rur:MetamorphicComplex
   a skos:Concept ;
@@ -332,7 +343,7 @@ rur:MetamorphicComplex
   skos:notation "rrmco" ;
   skos:prefLabel "metamorphic complex"@en ;
   skos:related geof:ComplexRockUnit ;
-  skos:scopeNote "Examples in Queensland include the Kurbayia Metamorphic Complex (includes dioritic to granitic gneiss felsic gneiss, minor pelitic schist) and the Glen Eva Metamorphic Complex (foliated meta-igneous and metasedimentery rocks) [Jell, 2013: Geology of Queensland, Geological Survey of Queensland, 1063 pages.]."@en ;
+  dcterms:provenance "Examples in Queensland include the Kurbayia Metamorphic Complex (includes dioritic to granitic gneiss felsic gneiss, minor pelitic schist) and the Glen Eva Metamorphic Complex (foliated meta-igneous and metasedimentery rocks) [Jell, 2013: Geology of Queensland, Geological Survey of Queensland, 1063 pages.]."@en ;
 .
 rur:MetamorphicCoreComplex
   a skos:Concept ;
@@ -346,6 +357,7 @@ rur:MetamorphicCoreComplex
   skos:notation "rrmcc" ;
   skos:prefLabel "metamorphic-core-complex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "Coney, 1980; Ring, 2014; Wikipedia, accessed 07.09.2021"@en ;
 .
 rur:Nappe
   a skos:Concept ;
@@ -358,19 +370,19 @@ rur:Nappe
   skos:notation "rrnap" ;
   skos:prefLabel "nappe"@en ;
   skos:related geof:TectonostratigraphicRockUnit ;
-  skos:scopeNote "Nappe is the basic tectonostratigraphic unit and the term includes detachment sheets and fold nappes (Kumpulainen, 2017)."@en ;
+  dcterms:provenance "Nappe is the basic tectonostratigraphic unit and the term includes detachment sheets and fold nappes (Kumpulainen, 2017)."@en ;
 .
 rur:NappeComplex
   a skos:Concept ;
   dcterms:references "Kumpulainen, R.A. (Editor.), 2017: Guide for geological nomenclature in Sweden, GFF, 139:1, 3-20. <https://www.tandfonline.com/doi/full/10.1080/11035897.2016.1178666>" ;
   dcterms:references "Nystuen, J.P. (Editor), 1989: Rules and recommendations of naming geological units in Norway. Norsk Geologisk Tidskrift 69 (Supplement 2), 1–111. <https://foreninger.uio.no/ngf/ngt/pdfs/NGT_69_supplement1.pdf>" ;
-  rdfs:isDefinedBy <https://linked.data.gov.au/def/geofeatures> ;
+  rdfs:isDefinedBy <https://linked.data.gov.au/def/rock-unit-rank> ;
   skos:definition "A nappe complex consists of two or more distinct nappes that are stacked upon, and related to, one another in some significant respect, e.g., shared general environment of origin, similar metamorphism and/or deformation. (Kumpulainen, 2017)"@en ;
-  skos:inScheme <https://linked.data.gov.au/def/geofeatures> ;
+  skos:inScheme <https://linked.data.gov.au/def/rock-unit-rank> ;
   skos:notation "rrnpc" ;
   skos:prefLabel "nappe complex"@en ;
   skos:related geof:TectonostratigraphicRockUnit ;
-  skos:scopeNote "In Sweden, Kumpulainen (2017) recognised two ranks of tectonostratigraphic units (nappe and nappe complex), although four ranks were recognized in Norway by Nystuen (1989)."@en ;
+  dcterms:provenance "In Sweden, Kumpulainen (2017) recognised two ranks of tectonostratigraphic units (nappe and nappe complex), although four ranks were recognized in Norway by Nystuen (1989)."@en ;
   skos:broader <http://sweetontology.net/realmGeol/GeologicFeature> ;
 .
 rur:Neck
@@ -382,6 +394,7 @@ rur:Neck
   skos:notation "rrnek" ;
   skos:prefLabel "neck"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:NeckSwarm
   a skos:Concept ;
@@ -393,7 +406,7 @@ rur:NeckSwarm
   skos:notation "rrnsw" ;
   skos:prefLabel "neck-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "The rank of intrusive igneous rock units, such as ‘neck-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
+  dcterms:provenance "The rank of intrusive igneous rock units, such as ‘neck-swarm’, below that of ‘intrusion’, the latter here provisionally instituted as the basic unit of rank of intrusive igneous rock units, is not addressed [compare: Gillespie & Leslie (2021) for the contrasting rank and definition applied to ‘intrusion’, and to the rank applied to ‘swarm’ in BRUCS]."@en ;
 .
 rur:Ophiolite
   a skos:Concept ;
@@ -404,7 +417,7 @@ rur:Ophiolite
   skos:notation "rroph" ;
   skos:prefLabel "ophiolite"@en ;
   skos:related geof:TectonometamorphicRockUnit ;
-  skos:scopeNote "Gillespie & Leslie (2021), in BRUCS, accorded an ophiolite a Rank-4 position (Tectonometamorphic Units) in BRUCS, to permit individual related occurrences of ophiolite to be grouped in higher-rank associations (giving an example, in the Highland Border Fault Zone in Scotland, of a possible reclassification of the Highland Border Ophoilite under the Highland Border Ophiolite Assemblage (Rank 2) and potentially (at Rank 1) under the Iapetus Ocean Ophiolite Superassemblage.The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
+  dcterms:provenance "Gillespie & Leslie (2021), in BRUCS, accorded an ophiolite a Rank-4 position (Tectonometamorphic Units) in BRUCS, to permit individual related occurrences of ophiolite to be grouped in higher-rank associations (giving an example, in the Highland Border Fault Zone in Scotland, of a possible reclassification of the Highland Border Ophoilite under the Highland Border Ophiolite Assemblage (Rank 2) and potentially (at Rank 1) under the Iapetus Ocean Ophiolite Superassemblage.The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
 .
 rur:OphioliteComplex
   a skos:Concept ;
@@ -419,6 +432,7 @@ rur:OphioliteComplex
   skos:notation "rroco" ;
   skos:prefLabel "ophiolite-complex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "Kusky et al., 2001; Harper et al., 2003; Gillespie et al., 2011; Fu et al., 2018"@en ;
 .
 rur:Pipe
   a skos:Concept ;
@@ -429,6 +443,7 @@ rur:Pipe
   skos:notation "rrpip" ;
   skos:prefLabel "pipe"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:PipeSwarm
   a skos:Concept ;
@@ -440,6 +455,7 @@ rur:PipeSwarm
   skos:notation "rrpis" ;
   skos:prefLabel "pipe-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Plug
   a skos:Concept ;
@@ -450,6 +466,7 @@ rur:Plug
   skos:notation "rrplg" ;
   skos:prefLabel "plug"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:PlugSwarm
   a skos:Concept ;
@@ -461,6 +478,7 @@ rur:PlugSwarm
   skos:notation "rrpls" ;
   skos:prefLabel "plug-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Pluton
   a skos:Concept ;
@@ -471,6 +489,7 @@ rur:Pluton
   skos:notation "rrplu" ;
   skos:prefLabel "pluton"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:PlutonCluster
   a skos:Concept ;
@@ -481,6 +500,7 @@ rur:PlutonCluster
   skos:notation "rrpcl" ;
   skos:prefLabel "pluton cluster"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Jell, 2013, pp. 61, 80–81"@en ;
 .
 rur:Ring-dyke
   a skos:Concept ;
@@ -492,6 +512,7 @@ rur:Ring-dyke
   skos:notation "rrrdy" ;
   skos:prefLabel "ring-dyke"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:RingComplex
   a skos:Concept ;
@@ -503,6 +524,7 @@ rur:RingComplex
   skos:notation "rrrco" ;
   skos:prefLabel "ring-complex"@en ;
   skos:related rur:ComplexRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:RingDykeSwarm
   a skos:Concept ;
@@ -514,6 +536,7 @@ rur:RingDykeSwarm
   skos:notation "rrrds" ;
   skos:prefLabel "ring-dyke-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:RingIntrusion
   a skos:Concept ;
@@ -524,6 +547,7 @@ rur:RingIntrusion
   skos:notation "rrrin" ;
   skos:prefLabel "ring-intrusion"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Sheet
   a skos:Concept ;
@@ -534,6 +558,7 @@ rur:Sheet
   skos:notation "rrsht" ;
   skos:prefLabel "sheet"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:SheetComplex
   a skos:Concept ;
@@ -545,6 +570,7 @@ rur:SheetComplex
   skos:notation "rrshc" ;
   skos:prefLabel "sheet-complex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:SheetSwarm
   a skos:Concept ;
@@ -556,6 +582,7 @@ rur:SheetSwarm
   skos:notation "rrshs" ;
   skos:prefLabel "sheet-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Sill
   a skos:Concept ;
@@ -566,6 +593,7 @@ rur:Sill
   skos:notation "rrsil" ;
   skos:prefLabel "sill"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:SillCluster
   a skos:Concept ;
@@ -576,7 +604,7 @@ rur:SillCluster
   skos:notation "rrscl" ;
   skos:prefLabel "sill cluster"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
-  skos:scopeNote "An example being the Borrowdale Sill Cluster in the UK (Gillespie et al., 2021, figure 4)."@en ;
+  dcterms:provenance "An example being the Borrowdale Sill Cluster in the UK (Gillespie et al., 2021, figure 4)."@en ;
 .
 rur:SillComplex
   a skos:Concept ;
@@ -588,6 +616,7 @@ rur:SillComplex
   skos:notation "rrslc" ;
   skos:prefLabel "sill-complex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:SillSwarm
   a skos:Concept ;
@@ -599,6 +628,7 @@ rur:SillSwarm
   skos:notation "rrsls" ;
   skos:prefLabel "sill-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:StructuralComplex
   a skos:Concept ;
@@ -612,6 +642,7 @@ rur:StructuralComplex
   skos:notation "rrstc" ;
   skos:prefLabel "stuctural-complex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "North American Stratigraphic Code, 2005; also see: Easton, 2009; Kumpulainen, 2017"@en ;
 .
 rur:Subassemblage
   a skos:Concept ;
@@ -622,7 +653,7 @@ rur:Subassemblage
   skos:notation "rrsba" ;
   skos:prefLabel "subassemblage"@en ;
   skos:related geof:TectonometamorphicRockUnit ;
-  skos:scopeNote "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
+  dcterms:provenance "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
 .
 rur:Subcomplex
   a skos:Concept ;
@@ -633,6 +664,7 @@ rur:Subcomplex
   skos:notation "rrsbc" ;
   skos:prefLabel "subcomplex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Subgroup
   a skos:Concept ;
@@ -644,6 +676,7 @@ rur:Subgroup
   skos:notation "rrsbg" ;
   skos:prefLabel "subgroup"@en ;
   skos:related geof:LithostratigraphicUnit ;
+  dcterms:provenance "Salvador, 2013; Murphy & Salvador, Online"@en ;
 .
 rur:Subsuite
   a skos:Concept ;
@@ -657,6 +690,7 @@ rur:Subsuite
   skos:notation "rrsbs" ;
   skos:prefLabel "subsuite"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021; cf. North American Stratigraphic Code, 2005; cf. Kumpulainen, 2017"@en ;
 .
 rur:Suite
   a skos:Concept ;
@@ -669,6 +703,7 @@ rur:Suite
   skos:notation "rrsui" ;
   skos:prefLabel "suite"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021; cf. North American Stratigraphic Code, 2005; cf. Kumpulainen, 2017"@en ;
 .
 rur:Superassemblage
   a skos:Concept ;
@@ -679,7 +714,7 @@ rur:Superassemblage
   skos:notation "rrspa" ;
   skos:prefLabel "superassemblage"@en ;
   skos:related geof:TectonometamorphicRockUnit ;
-  skos:scopeNote "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
+  dcterms:provenance "A rank term newly defined by Gillespie & Leslie (2021) for tectonometamorphic units, with potential for application to such rock types in Queensland and Australia. The BRUCS tectonometamorphic rank terminology is only partially introduced into this ontology."@en ;
   skos:broader <http://sweetontology.net/realmGeol/GeologicFeature> ;
 .
 rur:Supercomplex
@@ -693,6 +728,7 @@ rur:Supercomplex
   skos:prefLabel "supercomplex"@en ;
   skos:related geof:ComplexRockUnit ;
   skos:broader <http://sweetontology.net/realmGeol/GeologicFeature> ;
+  dcterms:provenance "The Subcommission on Quaternary Stratigraphy, Online"@en ;
 .
 rur:Supergroup
   a skos:Concept ;
@@ -705,6 +741,7 @@ rur:Supergroup
   skos:prefLabel "supergroup"@en ;
   skos:related geof:LithostratigraphicUnit ;
   skos:broader <http://sweetontology.net/realmGeol/GeologicFeature> ;
+  dcterms:provenance "Salvador, 2013; Murphy & Salvador, Online"@en ;
 .
 rur:Supersuite
   a skos:Concept ;
@@ -718,6 +755,7 @@ rur:Supersuite
   skos:prefLabel "supersuite"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
   skos:broader <http://sweetontology.net/realmGeol/GeologicFeature> ;
+  dcterms:provenance "Gillespie & Leslie, 2021; cf. North American Stratigraphic Code, 2005; cf. Kumpulainen, 2017"@en ;
 .
 rur:Swarm
   a skos:Concept ;
@@ -728,6 +766,7 @@ rur:Swarm
   skos:notation "rrswm" ;
   skos:prefLabel "swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Vein
   a skos:Concept ;
@@ -738,6 +777,7 @@ rur:Vein
   skos:notation "rrvei" ;
   skos:prefLabel "vein"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:Vein-complex
   a skos:Concept ;
@@ -750,6 +790,7 @@ rur:Vein-complex
   skos:prefLabel "vein-complex"@en ;
   skos:related geof:ComplexRockUnit ;
   skos:related rur:Vein-swarm ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:VeinSwarm
   a skos:Concept ;
@@ -764,6 +805,7 @@ rur:VeinSwarm
   skos:prefLabel "vein-swarm"@en ;
   skos:related geof:IgneousIntrusiveRockUnit ;
   skos:related rur:Vein-complex ;
+  dcterms:provenance "Gillespie & Leslie, 2021"@en ;
 .
 rur:VolcanicComplex
   a skos:Concept ;
@@ -779,4 +821,5 @@ rur:VolcanicComplex
   skos:notation "rrvco" ;
   skos:prefLabel "volcanic-complex"@en ;
   skos:related geof:ComplexRockUnit ;
+  dcterms:provenance "North American Stratigraphic Code, 2005; Kumpulainen, 2017; Gillespie & Leslie, 2021"@en ;
 .
